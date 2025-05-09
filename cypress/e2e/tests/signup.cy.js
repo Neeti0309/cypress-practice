@@ -13,7 +13,7 @@ describe('User Signup flow for automationexcrcise website', () => {
 
     //assertion after signup
      cy.url().should('include', '/signup');
-     // cy.contain('Enter Account Informations').should('be.visible');
+     cy.contains('Enter Account Information').should('be.visible');
    });
 
   })
